@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>播放器</title>
+</head>
+
+<body>
+ <script src="swfobject.js" type="text/javascript"></script>
+                 <p id="player1"></p>
+                <script type="text/javascript">
+	                var s1 = new SWFObject("flvplayer.swf","single","500","500","7");
+	                s1.addParam("allowfullscreen","true");
+					s1.addParam("wmode","transparent");
+	                s1.addVariable("file","xiyangyang.flv");
+	                s1.addVariable("image","over.jpg");
+	                s1.addVariable("width","500");
+	                s1.addVariable("height","500");
+	                s1.write("player1");
+  </script>
+</body>
+</html>

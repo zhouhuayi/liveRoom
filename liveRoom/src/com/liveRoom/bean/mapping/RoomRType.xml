@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liveRoom.dao.RoomDao">
+	<select id="roomtypeall">
+		select r.*,u.user_id,u.user_name,rt.roomtype_id,rt.roomtype_name from room r,user u,roomtype rt where r.room_user=u.user_id and r.room_type=rt.roomtype_id order by r.room_id
+	</select>
+</mapper>

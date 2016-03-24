@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liveRoom.dao.NewsDao" >
+  <resultMap id="BaseResultMap" type="com.liveRoom.bean.News" >
+    <id column="news_id" property="news_Id" jdbcType="INTEGER" />
+    <result column="news_title" property="news_Title" jdbcType="VARCHAR" />
+    <result column="news_describe" property="news_Describe" jdbcType="VARCHAR" />
+    <result column="news_address" property="news_Address" jdbcType="VARCHAR" />
+    <result column="news_content" property="news_Content" jdbcType="VARCHAR" />
+    <result column="news_uploadtime" property="news_Uploadtime" jdbcType="TIMESTAMP" />
+    <result column="news_userid" property="news_Userid" jdbcType="INTEGER" />
+    <result column="news_type" property="news_Type" jdbcType="VARCHAR" />
+    <result column="news_thumbup" property="news_Thumbup" jdbcType="BIGINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    news_id, news_title, news_describe, news_address, news_content, news_uploadtime, 
+    news_userid, news_type, news_thumbup
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from news
+    where news_id = #{news_Id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from news
+    where news_id = #{news_Id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.liveRoom.bean.News" >
+    insert into news (news_id, news_title, news_describe, 
+      news_address, news_content, news_uploadtime, 
+      news_userid, news_type, news_thumbup
+      )
+    values (#{news_Id,jdbcType=INTEGER}, #{news_Title,jdbcType=VARCHAR}, #{news_Describe,jdbcType=VARCHAR}, 
+      #{news_Address,jdbcType=VARCHAR}, #{news_Content,jdbcType=VARCHAR}, #{news_Uploadtime,jdbcType=TIMESTAMP}, 
+      #{news_Userid,jdbcType=INTEGER}, #{news_Type,jdbcType=VARCHAR}, #{news_Thumbup,jdbcType=BIGINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.liveRoom.bean.News" useGeneratedKeys="true" keyProperty="news_Id">
+    insert into news
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="news_Id != null" >
+        news_id,
+      </if>
+      <if test="news_Title != null" >
+        news_title,
+      </if>
+      <if test="news_Describe != null" >
+        news_describe,
+      </if>
+      <if test="news_Address != null" >
+        news_address,
+      </if>
+      <if test="news_Content != null" >
+        news_content,
+      </if>
+      <if test="news_Uploadtime != null" >
+        news_uploadtime,
+      </if>
+      <if test="news_Userid != null" >
+        news_userid,
+      </if>
+      <if test="news_Type != null" >
+        news_type,
+      </if>
+      <if test="news_Thumbup != null" >
+        news_thumbup,
+      </if>
+      <if test="news_photo != null" >
+        news_photo,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="news_Id != null" >
+        #{news_Id,jdbcType=INTEGER},
+      </if>
+      <if test="news_Title != null" >
+        #{news_Title,jdbcType=VARCHAR},
+      </if>
+      <if test="news_Describe != null" >
+        #{news_Describe,jdbcType=VARCHAR},
+      </if>
+      <if test="news_Address != null" >
+        #{news_Address,jdbcType=VARCHAR},
+      </if>
+      <if test="news_Content != null" >
+        #{news_Content,jdbcType=VARCHAR},
+      </if>
+      <if test="news_Uploadtime != null" >
+        #{news_Uploadtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="news_Userid != null" >
+        #{news_Userid,jdbcType=INTEGER},
+      </if>
+      <if test="news_Type != null" >
+        #{news_Type,jdbcType=INTEGER},
+      </if>
+      <if test="news_Thumbup != null" >
+        #{news_Thumbup,jdbcType=BIGINT},
+      </if>
+      <if test="news_photo != null" >
+        #{news_photo,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.liveRoom.bean.News" >
+    update news
+    <set >
+      <if test="news_Title != null" >
+        news_title = #{news_Title,jdbcType=VARCHAR},
+      </if>
+      <if test="news_Describe != null" >
+        news_describe = #{news_Describe,jdbcType=VARCHAR},
+      </if>
+      <if test="news_Address != null" >
+        news_address = #{news_Address,jdbcType=VARCHAR},
+      </if>
+      <if test="news_Content != null" >
+        news_content = #{news_Content,jdbcType=VARCHAR},
+      </if>
+      <if test="news_Uploadtime != null" >
+        news_uploadtime = #{news_Uploadtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="news_Userid != null" >
+        news_userid = #{news_Userid,jdbcType=INTEGER},
+      </if>
+      <if test="news_Type != null" >
+        news_type = #{news_Type,jdbcType=VARCHAR},
+      </if>
+      <if test="news_Thumbup != null" >
+        news_thumbup = #{news_Thumbup,jdbcType=BIGINT},
+      </if>
+    </set>
+    where news_id = #{news_Id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.liveRoom.bean.News" >
+    update news
+    set news_title = #{news_Title,jdbcType=VARCHAR},
+      news_describe = #{news_Describe,jdbcType=VARCHAR},
+      news_address = #{news_Address,jdbcType=VARCHAR},
+      news_content = #{news_Content,jdbcType=VARCHAR},
+      news_uploadtime = #{news_Uploadtime,jdbcType=TIMESTAMP},
+      news_userid = #{news_Userid,jdbcType=INTEGER},
+      news_type = #{news_Type,jdbcType=VARCHAR},
+      news_thumbup = #{news_Thumbup,jdbcType=BIGINT}
+    where news_id = #{news_Id,jdbcType=INTEGER}
+  </update>
+</mapper>

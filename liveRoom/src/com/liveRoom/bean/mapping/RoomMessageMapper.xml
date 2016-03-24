@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liveRoom.dao.RoomMessageDao" >
+  <resultMap id="BaseResultMap" type="com.liveRoom.bean.RoomMessage" >
+    <id column="room_message_Id" property="room_message_Id" jdbcType="INTEGER" />
+    <result column="room_message_User" property="room_message_User" jdbcType="INTEGER" />
+    <result column="room_message_Room" property="room_message_Room" jdbcType="INTEGER" />
+    <result column="room_message_Date" property="room_message_Date" jdbcType="TIMESTAMP" />
+    <result column="room_message_State" property="room_message_State" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.liveRoom.bean.RoomMessage" extends="BaseResultMap" >
+    <result column="room_message_Content" property="room_message_Content" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    room_message_Id, room_message_User, room_message_Room, room_message_Date, room_message_State
+  </sql>
+  <sql id="Blob_Column_List" >
+    room_message_Content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from roommessage
+    where room_message_Id = #{room_message_Id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from roommessage
+    where room_message_Id = #{room_message_Id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.liveRoom.bean.RoomMessage" >
+    insert into roommessage (room_message_Id, room_message_User, room_message_Room, 
+      room_message_Date, room_message_State, room_message_Content
+      )
+    values (#{room_message_Id,jdbcType=INTEGER}, #{room_message_User,jdbcType=INTEGER}, #{room_message_Room,jdbcType=INTEGER}, 
+      #{room_message_Date,jdbcType=TIMESTAMP}, #{room_message_State,jdbcType=INTEGER}, #{room_message_Content,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.liveRoom.bean.RoomMessage" >
+    insert into roommessage
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="room_message_Id != null" >
+        room_message_Id,
+      </if>
+      <if test="room_message_User != null" >
+        room_message_User,
+      </if>
+      <if test="room_message_Room != null" >
+        room_message_Room,
+      </if>
+      <if test="room_message_Date != null" >
+        room_message_Date,
+      </if>
+      <if test="room_message_State != null" >
+        room_message_State,
+      </if>
+      <if test="room_message_Content != null" >
+        room_message_Content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="room_message_Id != null" >
+        #{room_message_Id,jdbcType=INTEGER},
+      </if>
+      <if test="room_message_User != null" >
+        #{room_message_User,jdbcType=INTEGER},
+      </if>
+      <if test="room_message_Room != null" >
+        #{room_message_Room,jdbcType=INTEGER},
+      </if>
+      <if test="room_message_Date != null" >
+        #{room_message_Date,jdbcType=TIMESTAMP},
+      </if>
+      <if test="room_message_State != null" >
+        #{room_message_State,jdbcType=INTEGER},
+      </if>
+      <if test="room_message_Content != null" >
+        #{room_message_Content,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.liveRoom.bean.RoomMessage" >
+    update roommessage
+    <set >
+      <if test="room_message_User != null" >
+        room_message_User = #{room_message_User,jdbcType=INTEGER},
+      </if>
+      <if test="room_message_Room != null" >
+        room_message_Room = #{room_message_Room,jdbcType=INTEGER},
+      </if>
+      <if test="room_message_Date != null" >
+        room_message_Date = #{room_message_Date,jdbcType=TIMESTAMP},
+      </if>
+      <if test="room_message_State != null" >
+        room_message_State = #{room_message_State,jdbcType=INTEGER},
+      </if>
+      <if test="room_message_Content != null" >
+        room_message_Content = #{room_message_Content,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where room_message_Id = #{room_message_Id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.liveRoom.bean.RoomMessage" >
+    update roommessage
+    set room_message_User = #{room_message_User,jdbcType=INTEGER},
+      room_message_Room = #{room_message_Room,jdbcType=INTEGER},
+      room_message_Date = #{room_message_Date,jdbcType=TIMESTAMP},
+      room_message_State = #{room_message_State,jdbcType=INTEGER},
+      room_message_Content = #{room_message_Content,jdbcType=VARCHAR}
+    where room_message_Id = #{room_message_Id,jdbcType=INTEGER}
+  </update>
+</mapper>

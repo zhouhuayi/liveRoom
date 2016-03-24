@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liveRoom.dao.VideoDao" >
+  <resultMap id="BaseResultMap" type="com.liveRoom.bean.Video" >
+    <id column="" property="video_Id" jdbcType="INTEGER" />
+    <result column="video_name" property="video_Name" jdbcType="VARCHAR" />
+    <result column="video_describe" property="video_Describe" jdbcType="VARCHAR" />
+    <result column="video_address" property="video_Address" jdbcType="VARCHAR" />
+    <result column="video_uploadtime" property="video_Uploadtime" jdbcType="TIMESTAMP" />
+    <result column="video_userid" property="video_Userid" jdbcType="INTEGER" />
+    <result column="video_type" property="video_Type" jdbcType="INTEGER" />
+    <result column="video_plays" property="video_Plays" jdbcType="VARCHAR" />
+    <result column="video_thumbup" property="video_Thumbup" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    , video_name, video_describe, video_address, video_uploadtime, video_userid, 
+    video_type, video_plays, video_thumbup
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from video
+    where video_Id = #{video_Id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from video
+    where  = #{video_Id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.liveRoom.bean.Video" >
+    insert into video (video_name, video_describe, 
+      video_address, video_uploadtime, video_userid, 
+      video_type, video_plays, video_thumbup
+      )
+    values (#{video_Id,jdbcType=INTEGER}, #{video_Name,jdbcType=VARCHAR}, #{video_Describe,jdbcType=VARCHAR}, 
+      #{video_Address,jdbcType=VARCHAR}, #{video_Uploadtime,jdbcType=TIMESTAMP}, #{video_Userid,jdbcType=INTEGER}, 
+      #{video_Type,jdbcType=VARCHAR}, #{video_Plays,jdbcType=VARCHAR}, #{video_Thumbup,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.liveRoom.bean.Video" useGeneratedKeys="true" keyProperty="video_Id">
+    insert into video
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="video_Id != null" >
+        video_Id,
+      </if>
+      <if test="video_Name != null" >
+        video_name,
+      </if>
+      <if test="video_Describe != null" >
+        video_describe,
+      </if>
+      <if test="video_Address != null" >
+        video_address,
+      </if>
+      <if test="video_Uploadtime != null" >
+        video_uploadtime,
+      </if>
+      <if test="video_Userid != null" >
+        video_userid,
+      </if>
+      <if test="video_Type != null" >
+        video_type,
+      </if>
+      <if test="video_Plays != null" >
+        video_plays,
+      </if>
+      <if test="video_Thumbup != null" >
+        video_thumbup,
+      </if>
+      <if test="video_playTime != null" >
+        video_playTime,
+      </if>
+      <if test="video_images != null" >
+        video_images,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="video_Id != null" >
+        #{video_Id,jdbcType=INTEGER},
+      </if>
+      <if test="video_Name != null" >
+        #{video_Name,jdbcType=VARCHAR},
+      </if>
+      <if test="video_Describe != null" >
+        #{video_Describe,jdbcType=VARCHAR},
+      </if>
+      <if test="video_Address != null" >
+        #{video_Address,jdbcType=VARCHAR},
+      </if>
+      <if test="video_Uploadtime != null" >
+        #{video_Uploadtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="video_Userid != null" >
+        #{video_Userid,jdbcType=INTEGER},
+      </if>
+      <if test="video_Type != null" >
+        #{video_Type,jdbcType=INTEGER},
+      </if>
+      <if test="video_Plays != null" >
+        #{video_Plays,jdbcType=VARCHAR},
+      </if>
+      <if test="video_Thumbup != null" >
+        #{video_Thumbup,jdbcType=VARCHAR},
+      </if>
+      <if test="video_playTime != null" >
+        #{video_playTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="video_images != null" >
+        #{video_images,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

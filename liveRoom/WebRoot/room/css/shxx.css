@@ -1,0 +1,267 @@
+/* CSS Document */
+/*.membersliber{padding:10px;}*/
+.ui-menu .mCSB_container{ padding: 2px; }
+
+.ui-menu .mCSB_scrollTools{ 
+	right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.bootstrap #examples{ background: transparent; }
+
+.bootstrap #myModal-2 .modal-body{
+	max-height: 340px;
+	-webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;
+	margin-bottom: -15px;
+}
+
+.bootstrap #myTab{ max-width: 600px; }
+
+.bootstrap #myTab .tab-pane{ padding: 15px 5px 15px 15px; }
+
+body.colorbox-demo #cboxContent, body.colorbox-demo #cboxContent p, body.colorbox-demo #cboxContent a:hover{ color: #333; }
+
+.all-themes #examples{ padding: 15px 0 0 15px; }
+
+.all-themes .content{
+	width: 310px;
+	height: 500px;
+	margin: 0 20px 20px 0;
+	float: left;
+}
+
+.all-themes .content h2, .all-themes .content p, .all-themes .content hr{ 
+	width: 240px;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
+}
+
+.all-themes #content-m h2, .all-themes #content-m p, .all-themes #content-m hr, 
+.all-themes #content-md h2, .all-themes #content-md p, .all-themes #content-md hr{ width: 270px; }
+
+.all-themes .content.expanded-content h2, .all-themes .content.expanded-content p, .all-themes .content.expanded-content hr, 
+.all-themes #content-m.expanded-content h2, .all-themes #content-m.expanded-content p, .all-themes #content-m.expanded-content hr, 
+.all-themes #content-md.expanded-content h2, .all-themes #content-md.expanded-content p, .all-themes #content-md.expanded-content hr{ width: 540px; }
+
+.max-height-example .content{
+	height: auto;
+	max-height: 400px;
+}
+
+.max-width-example{ min-width: 620px; }
+
+.max-width-example .content{ 
+	height: auto;
+	width: auto;
+	max-width: 50%;
+	min-width: 600px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.max-width-example .content ul{
+	max-height: 135px;
+	overflow-y: hidden;
+}
+
+.max-width-example .content img, .max-width-example .content ul li > a{
+	height: 130px;
+	border: 3px solid #444;
+}
+
+.max-width-example .content ul li > a{
+	display: block;
+	padding: 20px;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
+	background: rgba(0,0,0,0.3);
+}
+
+.snap-scrolling-example .content{ 
+	height: auto; 
+	width: 853px;
+}
+
+.snap-scrolling-example .content img{ height: 160px; }
+
+.textarea-example .content{ width: 360px; }
+
+.textarea-example .content form{ margin: 25px 0 15px 0; }
+
+.textarea-example .content textarea, .textarea-example .textarea-clone{
+	width: 300px;
+	padding: 0 10px;
+	line-height:25px;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+.textarea-example .content textarea{
+	height:160px; 
+	resize:none; 
+	overflow:hidden; 
+	outline:none;
+	margin: 0;
+	border:none;
+	background:transparent;
+	box-shadow: none;
+}
+
+.textarea-example .content .textarea-wrapper{
+	height:182px; 
+	overflow:hidden;
+	background-color: #bbb;
+	background-color: rgba(255,255,255,0.6);
+	-moz-box-shadow: inset -1px -1px 1px rgba(255,255,255,0.6), inset 3px 3px 20px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset -1px -1px 1px rgba(255,255,255,0.6), inset 3px 3px 20px rgba(0,0,0,0.5);
+	box-shadow: inset -1px -1px 1px rgba(255,255,255,0.6), inset 3px 3px 20px rgba(0,0,0,0.5);
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+}
+
+.textarea-example .textarea-clone{
+	position:absolute; 
+	top:-9999px; 
+	left:-9999px; 
+	visibility:hidden; 
+	min-height: 160px; 
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+.textarea-example .content .textarea-wrapper .mCSB_scrollTools{ margin: 10px 5px; }
+
+.scrollTo-demo .content{ height: 290px; }
+
+.scrollTo-demo .demo-y{ height: 600px; }
+
+.scrollTo-demo .demo-x{
+	width: 660px;
+	background-color: #252525;
+}
+
+.scrollTo-demo .demo-x p{
+	float: left;
+	width: 300px;
+	margin-left: 30px;
+	height: auto;
+	padding: 5px 10px;
+	background-color: #333;
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+}
+
+.scrollTo-demo .demo-x hr + p{ margin-left: 0; }
+
+.scrollTo-demo .demo-yx{ background-color: #424242; }
+
+.scrollTo-demo .demo-yx p{ width: 1000px; }
+
+.scrollTo{ font-size: 12px; }
+
+.scrollTo + .scrollTo{ margin-top: 20px; }
+
+.scrollTo ul li:first-child span{
+	display: block;
+	padding: 3px 15px;
+}
+
+#test-id{
+	background-color: #eb3755;
+	color: #fff;
+}
+
+.rtl-demo #content-1{ width: 500px; }
+
+.rtl-demo #content-1 p{ width: 1000px; }
+
+.transitions #examples{
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+}
+
+.transitions .content{
+	-webkit-transition: all .6s ease-out; 
+	-moz-transition: all .6s ease-out; 
+	-o-transition: all .6s ease-out; 
+	transition: all .6s ease-out; 
+}
+/*===========================================滚动条样式=======================================================*/
+
+.menu{height:40px; background-color:#A42020;}
+.menu ul li{float:left;width:100px;text-align:center;line-height:40px;height:40px;cursor:pointer;color:#fff;font-size:16px;overflow:hidden;}
+.menu ul li a{color:#fff;}
+.menudiv{height:200px;}
+/*===========================================金日最活跃tab切换=======================================================*/
+
+.menu2{height:40px; background-color:#002C43;}
+.menu2 li{float:left;width:100px;text-align:center;line-height:40px;height:40px;cursor:pointer;color:#fff;font-size:16px;overflow:hidden;}
+.menu2 li a{color:#fff;}
+.menu2 .active{ background-color:#061B27;}
+.menu2div{height:100%;}
+/*===========================================用户列表tab切换=======================================================*/
+
+.option{height:40px; background-color:#002C43;}
+.option ul{ margin: 0px; padding: 0px; list-style-type: none; }
+.option li{height: 40px; font-size: 16px; line-height: 40px; color: #FFF; text-align: center; float: left; width: 100px;}
+.option li a{color:#fff;}
+.option .active{ background-color:#061B27;}
+.introduction{ height: 255px; background-color: #c9c9c9; color: #111111; font-size: 14px; padding:5px; }
+.intronei{height: 255px;overflow-y: auto;}
+/*===========================================简介tab切换=======================================================*/
+
+.chitchat{height:40px; background-color:#002C43;float: left;}
+.chitchat li{float:left;width:100px;text-align:center;line-height:40px;height:40px;cursor:pointer;color:#fff;font-size:16px;overflow:hidden;}
+.chitchat li a{color:#fff;}
+.chitchat .active{background:#061B27;}
+/*===========================================公聊私聊tab切换=======================================================*/
+
+.tab5 .menu5.active{ background-color:#E8E8E8;}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{background-color:#E8E8E8; color:#111}
+/*===========================================用户消息tab切换=======================================================*/
+
+.head-v3{position:relative;z-index:100;min-width:1000px}
+.head-v3 .navigation-inner{margin:0 auto;width:980px;position:relative}
+.navigation-up{height:60px;background:#27303f}
+.navigation-up .navigation-v3{margin-left:155px;float:left;_margin-left:10px}
+.navigation-up .navigation-v3 ul{float:left}
+.navigation-up .navigation-v3 li{float:left;font:normal 16px/59px "microsoft yahei";color:#fff}
+.navigation-up .navigation-v3 .nav-up-selected{background:#344157}
+.navigation-up .navigation-v3 .nav-up-selected-inpage{background:#202833}
+.navigation-up .navigation-v3 li h2{font-weight:normal;padding:0;margin:0}
+.navigation-up .navigation-v3 li h2 a{padding:0 25px;color:#fff;display:inline-block;height:60px;font-family:"microsoft yahei"}
+
+.navigation-down{position:absolute;top:55px;left:0px;width:100%;z-index: 5;}
+.navigation-down .nav-down-menu{width:100%;margin:0;background:#2D2D2D;position:absolute;top:0px; border-bottom:5px solid #181818;}
+.navigation-down .nav-down-menu .navigation-down-inner{margin:auto;width:1250px;position:relative}
+.navtert{ height:128px; width:100%;overflow:hidden;}
+.navigation-down .nav-down-menu li{float:left;margin:20px 18px 20px 0;}
+.navigation-down .menu-1 li{width:285px; height:88px; border:1px solid #4a4a4a; color:#cbcbcb; overflow:hidden; padding:4px;}
+.navigation-down .menu-1 li a{ color:#cbcbcb;}
+/*.navigation-down .menu-1 dt{font:normal 16px "microsoft yahei";color:#61789e;padding-bottom:10px;border-bottom:1px solid #61789e;margin-bottom:10px}
+.navigation-down .menu-1 dd a{color:#fff;font:normal 14px/30px "microsoft yahei"}
+.navigation-down .menu-1 dd a:hover{color:#60aff6}
+.navigation-down .menu-2 dd a,.navigation-down .menu-3 dd a{color:#fff;font:normal 16px "microsoft yahei"}*/
+
+/*===========================================其它演播室和变装=======================================================*/
+
+.links_list{position: relative; margin-left:0px;}
+.link_prev{left:0px;width:50px;height:50px;overflow:hidden;text-indent:-999em;display:block;cursor:pointer;background:url(../img/links.png) 0 0 no-repeat;position: absolute;z-index: 2;}
+.link_next{ right: 0px; top: 36px; width: 50px; height: 50px; border-radius: 25px; border: 1px solid #4A4A4A; overflow: hidden; display: block; cursor: pointer; position: absolute; z-index: 2; font-size: 14px; line-height: 50px; color: #808080; text-align: center; }
+.link_prev:hover,.link_next:hover {opacity:0.8;filter:alpha(opacity=80);}
+#links {width:1150px; margin-left:0px;}
+#links ul {width:1500px;}
+#links a:hover img {opacity:0.8;filter:alpha(opacity=80);}
+.slideContainer{position: relative;z-index:0;}
+/*===========================================其它演播室横向切换=======================================================*/
+
+/*.but{width:50px;height:50px;background:url(../img/but.png);display:block;position:fixed;top:0px;right:0px;}
+.but:hover{background:url(../img/but.png);}*/
+#hf{width:100%;height:auto;background-color:#2D2D2D;/*display:none;*/  padding-top: 20px;}
+#hf .con{width:1200px;height:130px;margin:0 auto;position:relative;}
+#hf .con dl{width:140px; float:left;}
+#hf .con dl dt{ width: auto; font-size: 12px; color: #FFF; font-weight: normal; }
+#hf .con dl dd{width:auto;}
+#hf .con .left{position:absolute;top:70px;left:0px;cursor:pointer;}
+#hf .con .right{position:absolute;top:70px;right:0px;cursor:pointer;}
+#hf .con .scroll{width:1080px;height:110px;overflow:hidden;margin:0 auto;position:relative;}
+#hf .con .scroll .scrollCon{width:100%;height:110px;position:absolute;left:0px;top:0px;}
+.scroll .scrollCon ul li{list-style:none;width:120px;height:70px;border:1px solid #181818;float:left;margin-left:0px;margin-right:10px;margin-top:10px;cursor:pointer; padding: 0px;}
+/*===========================================变装切换=======================================================*/
+

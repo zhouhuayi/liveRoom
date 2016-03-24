@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebRoot/css/layer.css=UTF-8
+encoding//WebRoot/index.jsp=UTF-8
+encoding//WebRoot/left.html=UTF-8
+encoding//WebRoot/login.jsp=UTF-8
+encoding//src/com/liveRoom/config/Constant.java=UTF-8
+encoding//src/com/liveRoom/config/file.properties=UTF-8
+encoding//src/com/liveRoom/dao/impl/CommonDaoImpl.java=UTF-8
+encoding//src/com/liveRoom/util/Redis.java=UTF-8
+encoding/<project>=UTF-8

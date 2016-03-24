@@ -1,0 +1,70 @@
+#emotions{ left:0; width: 364px; font-size:12px; background:#fff; position:absolute; border: 1px solid #E8E8E8;   z-index: 3;
+}
+#emotions a{ color: #232323; padding:2px 7px; text-decoration:none; 
+}
+#emotions img{
+	border:0;
+}
+#emotions div{ margin:2px 5px; padding:1px; overflow: hidden; 
+}
+#emotions #prev,
+#emotions #next
+{
+	margin-left:3px;
+	background:#eee;
+}
+#emotions .categorys{ color:#ccc; height:23px; color: #9abbc8; overflow:hidden; 
+}
+#emotions .categorys a{
+	display: inline-block;
+}
+#emotions .categorys a:hover{
+	text-decoration:underline;
+}
+#emotions .categorys a.current{
+	cursor: default;
+	background: #F0F0F0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#emotions .container{
+	padding:1px;
+	overflow: hidden;
+	width:352px;
+}
+#emotions .container a{
+	float:left;
+	width:26px;
+	height:30px;
+	text-align:center;
+	padding: 4px 2px;
+	margin: -1px 0 0 -1px;
+	border: 1px solid #e8e8e8;
+}
+#emotions .container a:hover{
+	z-index:2;
+	position:relative;
+	border:1px solid #0095cd;
+}
+#emotions .page{
+	text-align:right;
+}
+#emotions .page a.current{
+	color: #666;
+	background-color:#fff;
+}
+#emotions .page a{
+	margin-left:3px;
+	color: #0078B6;
+	background-color:#f3f3f3;
+}
+#emotions .page a:hover{
+	background-color:#e7e7e7;
+}
+.emotion { height: 30px; width: 85%; }
+.ferwoo { height: 100%; width: 100%; overflow: hidden; }
+.fweor-1 { float: left; height: 80%; width: 80%; }
+.emotion  { float: left; width: 100%; border-style: none; height: 98%; background-color:rgba(255, 255, 255, 0.01); font-family: "微软雅黑"; font-size: 12px; color: #000; }
+.fweor-2 { float: right; width: 14%; text-align: right; padding-right: 10px; position: relative; }
+.subtn{ width:75px; height:30px; font-family: "微软雅黑"; font-size: 14px; line-height: 30px; color: #FFF; background: #B01818; text-align: center; border-style: none; border-radius:4px; position: absolute; top: 25px; right: 10px; }/*圆角*/
+.subtn:hover{ background: #C32929; }

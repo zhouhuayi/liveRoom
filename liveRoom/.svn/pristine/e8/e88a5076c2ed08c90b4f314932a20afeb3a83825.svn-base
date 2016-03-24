@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="gbk">
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">
+<title>新闻页面</title>
+<style>
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-size: 14px;
+	font-family: "宋体";
+	color: #323232;
+}
+
+body,dl,li,p {
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	margin: auto;
+	color: #646464;
+}
+
+body {
+	background-color: #f0f0f0;
+}
+
+.xwxq {
+	width: 100%;
+	background-color: #fff;
+}
+
+.bt {
+	font-size: 20px;
+	margin-left: 10px;
+	padding-top: 10px;
+}
+
+.sj {
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+.sj p {
+	float: left;
+	color: #909090;
+	margin-right: 10px;
+}
+
+.gg {
+	margin-left: 10px;margin-right:10px;
+}
+
+.zw {
+	margin-left: 10px;
+	margin-top: 10px;
+	line-height: 18px;
+}
+
+.gg img {
+	width: 100%;
+	display: block;
+}
+
+.ly {
+	margin-left: 10px;
+	margin-top: 14px;
+	padding-bottom: 10px;
+}
+
+.ly a {
+	color: #646464;
+}
+
+.xgzx {
+	padding-left: 10px;
+	margin-top: 10px;
+	background-color: #FFF;
+}
+
+.xgz {
+	font-size: 20px;
+	line-height: 40px;
+	border-bottom: #a10f0f 2px solid;
+	width: 100px;
+	text-align: center;
+}
+
+.xgzx li {
+	margin-top: 6px;
+}
+
+.xgzx dl {
+	padding-bottom: 10px;
+}
+
+.xgzx dl span {
+	margin-right: 10px;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="xwxq">
+		<div class="bt">${news.news_Title}</div>
+		<div class="sj">
+			<p>资讯</p>
+			<p>${news.news_Uploadtime}</p>
+		</div>
+		<div class="gg">
+			<img src="${news.news_photo}">
+		</div>
+		<div class="zw">${news.news_Content}</div>
+		<div class="ly">
+			<a href="${news.news_Address}">文章来源：${news.news_Address}</a>
+		</div>
+	</div>
+	<div class="xgzx">
+		<div style=" border-bottom:2px solid #dfdfdf;">
+			<div class="xgz">相关资讯</div>
+		</div>
+		<dl>
+			<li><a href="${news1.news_Address}"><span><img style="display:${news1.display}"}
+						src="xd.png"></span>${news1.news_Title}</a></li>
+			<li><a href="${news2.news_Address}"><span><img style="display:${news2.display}"}
+						src="xd.png"></span>${news2.news_Title}</a></li>
+			<li><a href="${news3.news_Address}"><span><img style="display:${news3.display}"}
+						src="xd.png"></span>${news3.news_Title}</a></li>
+			<li><a href="${news4.news_Address}"><span><img style="display:${news4.display}"}
+						src="xd.png"></span>${news4.news_Title}</a></li>
+		</dl>
+	</div>
+</body>
+</html>

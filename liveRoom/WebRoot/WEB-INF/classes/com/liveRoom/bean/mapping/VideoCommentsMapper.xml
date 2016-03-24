@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.liveRoom.dao.VideoCommentsDao" >
+
+  <insert id="insertSelective" parameterType="com.liveRoom.bean.VideoComments" useGeneratedKeys="true" keyProperty="videocomments_id">
+    insert into videocomments
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="videocomments_id != null" >
+        videocomments_id,
+      </if>
+      <if test="videocomments_userid != null" >
+        videocomments_userid,
+      </if>
+      <if test="videocomments_content != null" >
+        videocomments_content,
+      </if>
+      <if test="videocomments_date != null" >
+        videocomments_date,
+      </if>
+      <if test="videocomments_videoid != null" >
+        videocomments_videoid,
+      </if>
+      <if test="videocomments_replyid != null" >
+        videocomments_replyid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="videocomments_id != null" >
+        #{videocomments_id,jdbcType=INTEGER},
+      </if>
+      <if test="videocomments_userid != null" >
+        #{videocomments_userid,jdbcType=INTEGER},
+      </if>
+      <if test="videocomments_content != null" >
+        #{videocomments_content,jdbcType=VARCHAR},
+      </if>
+      <if test="videocomments_date != null" >
+        #{videocomments_date,jdbcType=TIMESTAMP},
+      </if>
+      <if test="videocomments_videoid != null" >
+        #{videocomments_videoid,jdbcType=INTEGER},
+      </if>
+      <if test="videocomments_replyid != null" >
+        #{videocomments_replyid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+</mapper>

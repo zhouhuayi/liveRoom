@@ -1,0 +1,1340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="世基直播室,世基">
+<meta name="author" content="直播室">
+<meta name="keywords" content="世基直播室,世基">
+<title>直播室4.0</title>
+<!--[if lt IE 9]>
+		<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet"
+	type="text/css">
+<!--滚动条css-->
+<link href="css/shxx.css" rel="stylesheet" type="text/css">
+<!--滚动条css-->
+<link href="css/jquery.sinaEmotion.css" rel="stylesheet" type="text/css">
+<!--表情css-->
+<link href="css/logindialog.css" rel="stylesheet" />
+<!-- 登录弹出框css -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<!--用户消息横向切换js-->
+<script type="text/javascript" src="js/shxx.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script type="text/javascript">
+function xgmm() {
+	$("#bg").show();
+	$("#xgmm_div").show();
+}
+
+function del_xgmm(){
+	$("#bg").hide();
+	$("#xgmm_div").hide();
+}
+</script>
+</head>
+
+<body  onload="init();">
+	<div class="container-fluid head">
+		<div class="row">
+
+			<div class="col-xs-2 col-md-2 logo">
+				<!-- <img src="img/logo.png" alt="世基投资直播室" title="世基投资直播室"> -->
+			</div>
+
+			<div class="col-xs-8 col-md-8">
+				<div class="headcontent">
+					<ul>
+						<li class="nav-up-selected-inpage" _t_nav="product">其它演播室<span
+							class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></li>
+						<li class="" _t_nav="solution">变装<span
+							class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></li>
+						<li><a href="javascript:void(0);"
+							onclick=" toDesktop(location.href,'世基直播间')">添加到桌面</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-xs-2 col-md-2 head2 head_right">
+				<div class="dropdown">
+						<button type="button" class="btn btn-default registered btn-md" onclick="xgmm()">
+					登录</span>
+				</button>
+					<button class="btn btn-default dropdown-toggle thelogin"
+						type="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+						<img src="img/jops.png"><span id="span_username"></span><span
+							class="caret"></span>
+					</button>
+			
+					<ul class="dropdown-menu thelogin_x" role="menu"
+						aria-labelledby="dropdownMenu1">
+						<li>活跃度<br />
+							<div class="progress progress3">
+								<div class="progress-bar progress-bar-warning"
+									role="progressbar" aria-valuenow="20" aria-valuemin="0"
+									aria-valuemax="100" style="width: 20%">
+									<span class="sr-only">20%</span>
+								</div>
+							</div> <br />
+						</li>
+						<li>最近登录<br />2015.09.06 11:29
+						</li>
+						<li role="separator" class="divider"></li>
+						<li><a class="btn btn-default datum" href="#" role="button">我的个人资料</a></li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<!--其它演播室和变装开始-->
+			<div class="navigation-down">
+
+				<div id="product" class="nav-down-menu menu-1"
+					style="display: none;" _t_nav="product">
+					<div class="navigation-down-inner">
+
+						<div class="navtert">
+							<div class="content links">
+								<div class="links_list">
+									<!--<a class="link_prev" href="javascript:;" hidefocus="true" title="上一组" id="link_prev">上一组</a>-->
+									<div id="links">
+										<ul id="slideContainer" class="slideContainer">
+											<li>
+												<div class="media">
+													<a class="media-left" href="#"><img src="img/mayun.gif"></a>
+													<div class="media-body">
+														<h5 class="media-heading">讲师：马小云</h5>
+														<p>
+															个人资料，年龄，履历，学识，相关简介、成就，研究方向，观点理论，...
+															<ins>
+																<a href="#">详细>></a>
+															</ins>
+														</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="media">
+													<a class="media-left" href="#"><img src="img/mayun.gif"></a>
+													<div class="media-body">
+														<h5 class="media-heading">讲师：马小云2</h5>
+														<p>
+															个人资料，年龄，履历，学识，相关简介、成就，研究方向，观点理论，...
+															<ins>
+																<a href="#">详细>></a>
+															</ins>
+														</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="media">
+													<a class="media-left" href="#"><img src="img/mayun.gif"></a>
+													<div class="media-body">
+														<h5 class="media-heading">讲师：马小云3</h5>
+														<p>
+															个人资料，年龄，履历，学识，相关简介、成就，研究方向，观点理论，...
+															<ins>
+																<a href="#">详细>></a>
+															</ins>
+														</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="media">
+													<a class="media-left" href="#"><img src="img/mayun.gif"></a>
+													<div class="media-body">
+														<h5 class="media-heading">讲师：马小云4</h5>
+														<p>
+															个人资料，年龄，履历，学识，相关简介、成就，研究方向，观点理论，...
+															<ins>
+																<a href="#">详细>></a>
+															</ins>
+														</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="media">
+													<a class="media-left" href="#"><img src="img/mayun.gif"></a>
+													<div class="media-body">
+														<h5 class="media-heading">讲师：马小云5</h5>
+														<p>
+															个人资料，年龄，履历，学识，相关简介、成就，研究方向，观点理论，...
+															<ins>
+																<a href="#">详细>></a>
+															</ins>
+														</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="media">
+													<a class="media-left" href="#"><img src="img/mayun.gif"></a>
+													<div class="media-body">
+														<h5 class="media-heading">讲师：马小云6</h5>
+														<p>
+															个人资料，年龄，履历，学识，相关简介、成就，研究方向，观点理论，...
+															<ins>
+																<a href="#">详细>></a>
+															</ins>
+														</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="media">
+													<a class="media-left" href="#"><img src="img/mayun.gif"></a>
+													<div class="media-body">
+														<h5 class="media-heading">讲师：马小云7</h5>
+														<p>
+															个人资料，年龄，履历，学识，相关简介、成就，研究方向，观点理论，...
+															<ins>
+																<a href="#">详细>></a>
+															</ins>
+														</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<a class="link_next" href="javascript:;" hidefocus="true"
+										title="下一组" id="link_next">更多</a>
+								</div>
+							</div>
+						</div>
+						<!--其它演播室2-->
+
+					</div>
+				</div>
+				<!--其它演播室-->
+
+				<div id="solution" class="nav-down-menu menu-3 menu-1"
+					style="display: none;" _t_nav="solution">
+					<div class="navigation-down-inner">
+
+						<a href="#" class="but"></a>
+						<div id="hf">
+							<div class="con">
+
+								<dl>
+									<dt>默认主题</dt>
+									<dd>
+										<!--<img src="img/left.png" class="left"/>
+                                <img src="img/right.png" class="right"/>-->
+										<div class="scroll">
+											<div class="scrollCon">
+												<ul>
+													<li><img src="img/00-1.jpg" /></li>
+												</ul>
+											</div>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>纯色主题</dt>
+									<dd>
+										<div class="scroll">
+											<div class="scrollCon">
+												<ul>
+													<li><img src="img/11-1.jpg" /></li>
+													<li><img src="img/22-1.jpg" /></li>
+													<li><img src="img/33-1.jpg" /></li>
+												</ul>
+											</div>
+										</div>
+									</dd>
+								</dl>
+								<dl style="margin-left: 260px;">
+									<dt>节日&个性主题</dt>
+									<dd>
+										<div class="scroll">
+											<div class="scrollCon">
+												<ul>
+													<li><img src="img/44-1.jpg" /></li>
+													<li><img src="img/55-1.jpg" /></li>
+													<li><img src="img/66-1.jpg" /></li>
+													<li><img src="img/77-1.jpg" /></li>
+												</ul>
+											</div>
+										</div>
+									</dd>
+								</dl>
+
+							</div>
+						</div>
+						<!--变装2-->
+
+					</div>
+				</div>
+				<!--变装-->
+
+			</div>
+			<!--其它演播室和变装结束-->
+
+		</div>
+	</div>
+	<!--头部head-->
+
+	<div class="side">
+		<ul>
+			<li><a href="" class="sibj" data-toggle="modal"
+				data-target="#exampleModal" data-whatever=""><img
+					src="img/side_icon01.png"><br />评论</a></li>
+			<li><a href="" class="sibj" data-toggle="modal"
+				data-target="#shuju" data-whatever=""><img
+					src="img/side_icon02.png"><br />数据</a></li>
+			<li><a href="" class="sibj"><img src="img/side_icon03.png"><br />计算</a></li>
+			<li><a href="" class="sibj"><img src="img/side_icon04.png"><br />下载</a></li>
+			<li><a href="" class="sibj"><img src="img/side_icon05.png"><br />排班</a></li>
+			<li><a href="" class="sibj"><img src="img/side_icon06.png"><br />联系</a></li>
+			<li class="" type="button" id="dropdownMenu2" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false"><a href=""
+				class="sibj2"><img src="img/side_icon07.png"><br />分享</a></li>
+			<div class="dropdown-menu speech-bubblew onew" role="menu"
+				aria-labelledby="dropdownMenu2">
+				<div class="share">
+					<span class="share_left">分享到：</span>
+					<ul>
+						<li><img src="img/sjtop_1.png"></li>
+						<li><a
+							href="http://service.weibo.com/share/share.php?url=http%3A%2F%2Fshare.baidu.com%2F%230-tsina-1-75422-397232819ff9a47a7b7e80a40613cfe1&title=世基分享，为您带来更多世基流量%20-%20百度分享&appkey=1343713053&searchPic=true"
+							target="_blank"><img src="img/sjtop_2.png"></a></li>
+						<li><a
+							href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fshare.baidu.com%2F%230-qzone-1-83890-d020d2d2a4e8d1a374a433f596ad1440&title=世基分享，为您带来更多流量%20-%20世基分享&desc=&summary=&site="
+							target="_blank"><img src="img/sjtop_3.png"></a></li>
+					</ul>
+				</div>
+				<div class="Copyurl">
+					<a class="btn btn-default copylj" href="#" role="button">复制本页面链接</a>
+				</div>
+			</div>
+			<!--<li><a href="#"><div class="sidebox"><img src="img/side_icon03.png">新浪微博</div></a>往右弹出层</li>
+		<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="img/side_icon05.png"></a></li>返回顶部按钮-->
+		</ul>
+	</div>
+	<!--左侧left-->
+
+	<div class="switch">
+		<div class="switch_left">
+			<a class="btn_re" href="#"><img src="img/switch_left.png"></a>
+		</div>
+		<div class="switch_right">
+			<a class="btn_re" href="#"><img src="img/switch_right.png"></a>
+		</div>
+	</div>
+	<!--mian_left/mian_right左右切换按钮-->
+
+	<div class="container middle">
+		<div class="row main">
+			<!--用户列表开始-->
+			<div class="col-md-2 main_left">
+
+				<div id="myTab">
+					<div class="menu">
+						<ul>
+							<li class="active"><a href="#home" data-toggle="tab">今日最活跃</a></li>
+							<li><a href="#profile" data-toggle="tab"><span
+									class="active_y">历史排行</span></a></li>
+						</ul>
+					</div>
+					<div class="menudiv tab-content">
+						<div class="tab-pane fade in active" id="home">
+							<div class="most_active">
+								<div class="media">
+									<div class="media-left media-middle">
+										<img src="img/portrait.png">
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">
+											<img src="img/Level1.png"><span class="nickname">巴啦啦</span>
+										</h4>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar"
+												aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+												style="width: 10%">
+												<span class="sr-only">10%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left media-middle">
+										<img src="img/portrait.png">
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">
+											<img src="img/Level1.png"><span class="nickname">巴啦啦</span>
+										</h4>
+										<div class="progress">
+											<div class="progress-bar progress-bar-danger"
+												role="progressbar" aria-valuenow="80" aria-valuemin="0"
+												aria-valuemax="100" style="width: 80%">
+												<span class="sr-only">80%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left media-middle">
+										<img src="img/portrait.png">
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">
+											<img src="img/Level1.png"><span class="nickname">巴啦啦</span>
+										</h4>
+										<div class="progress">
+											<div class="progress-bar progress-bar-warning"
+												role="progressbar" aria-valuenow="20" aria-valuemin="0"
+												aria-valuemax="100" style="width: 20%">
+												<span class="sr-only">20%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="profile">
+							<div class="bost_active mCustomScrollbar" data-mcs-theme="dark">
+								<div class="media">
+									<div class="media-left media-middle">
+										<img src="img/portrait.png">
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">
+											<img src="img/Level1.png"><span class="nickname">巴啦啦</span>
+										</h4>
+										<div class="progress">
+											<div class="progress-bar progress-bar-danger"
+												role="progressbar" aria-valuenow="80" aria-valuemin="0"
+												aria-valuemax="100" style="width: 80%">
+												<span class="sr-only">80%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left media-middle">
+										<img src="img/portrait.png">
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">
+											<img src="img/Level1.png"><span class="nickname">巴啦啦</span>
+										</h4>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar"
+												aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+												style="width: 10%">
+												<span class="sr-only">10%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left media-middle">
+										<img src="img/portrait.png">
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">
+											<img src="img/Level1.png"><span class="nickname">巴啦啦</span>
+										</h4>
+										<div class="progress">
+											<div class="progress-bar progress-bar-warning"
+												role="progressbar" aria-valuenow="20" aria-valuemin="0"
+												aria-valuemax="100" style="width: 20%">
+												<span class="sr-only">20%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="myTab">
+					<div class="menu2">
+						<ul>
+							<li class="active"><a href="#students" data-toggle="tab">所有学员</a></li>
+							<li><a href="#management" data-toggle="tab">管理员</a></li>
+						</ul>
+					</div>
+					<div class="menu2div tab-content">
+						<div class="tab-pane fade in active" id="students">
+							<div class="members">
+								<div class="memberslib mCustomScrollbar" data-mcs-theme="dark">
+									<ul id="Member">
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<!-- <li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-danger"
+														role="progressbar" aria-valuenow="80" aria-valuemin="0"
+														aria-valuemax="100" style="width: 80%">
+														<span class="sr-only">80%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="management">
+							<div class="members">
+								<div class="memberslib mCustomScrollbar" data-mcs-theme="dark">
+									<ul>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-warning"
+														role="progressbar" aria-valuenow="20" aria-valuemin="0"
+														aria-valuemax="100" style="width: 20%">
+														<span class="sr-only">20%</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="media-left nemeleft">
+												<img src="img/jops.png">
+											</div>
+											<div class="nemecont">JOSUN</div>
+											<div class="nemeright">
+												<div class="progress progress2">
+													<div class="progress-bar progress-bar-info"
+														role="progressbar" aria-valuenow="80" aria-valuemin="0"
+														aria-valuemax="100" style="width: 80%">
+														<span class="sr-only">80%</span>
+													</div>
+												</div>
+											</div>
+										</li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--用户列表结束-->
+
+			<!--视频开始-->
+			<div class="col-md-6 main_content modal-body mCustomScrollbar"
+				data-mcs-theme="dark">
+				<div class="active2">
+					<div class="active_x">正在直播：投资者联盟大讲堂</div>
+					<button type="button" class="btn btn-default active_u btn-md">
+						刷新视频<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="video">
+					<!--<div class="embed-responsive embed-responsive-16by9 embed-responsive-4by3">
+                  <iframe height=498 width=510 src="http://player.youku.com/embed/XOTQ0OTk0MjA0" frameborder=0 allowfullscreen></iframe>
+                </div>-->
+					<embed
+						src="http://player.youku.com/player.php/sid/XOTQ0OTk0MjA0/v.swf"
+						allowFullScreen="true" quality="high" width="100%" height="420"
+						align="middle" allowScriptAccess="always"
+						type="application/x-shockwave-flash"></embed>
+				</div>
+				<div class="envelope"></div>
+				<!--红包图片-->
+
+				<div id="myTab">
+					<div class="option">
+						<ul>
+							<li><a href="#hangqin" data-toggle="tab">行情提示</a></li>
+							<li class="active"><a href="#jianjie" data-toggle="tab">讲师简介</a></li>
+							<li><a href="#zdy1" data-toggle="tab">自定义一</a></li>
+							<li><a href="#zdy2" data-toggle="tab">自定义二</a></li>
+						</ul>
+					</div>
+					<div class="introduction tab-content">
+						<div class="tab-pane fade intronei memberslib mCustomScrollbar"
+							data-mcs-theme="dark" id="hangqin">行情提示</div>
+						<div
+							class="tab-pane fade in active intronei memberslib mCustomScrollbar"
+							data-mcs-theme="dark" id="jianjie">
+							讲师：卓维<br />路震荡下跌险失3900点，最低跌至3907.40点，10点35左右沪指探底回升跌幅收窄。同样反向来看，看多但也不积极做多，虽然临近盘尾沪指呈上扬趋势，两
+							市1524股飘红，近180股涨停。但热点只有一家，国改成为第一热点，从中央到地方，大面积开花。而国改的热点是两个星期前的热点了，买点已过，高追有
+							讲师：卓维<br />路震荡下跌险失3900点，最低跌至3907.40点，10点35左右沪指探底回升跌幅收窄。同样反向来看，看多但也不积极做多，虽然临近盘尾沪指呈上扬趋势，两
+							市1524股飘红，近180股涨停。但热点只有一家，国改成为第一热点，从中央到地方，大面积开花。而国改的热点是两个星期前的热点了，买点已过，高追有
+							讲师：卓维<br />路震荡下跌险失3900点，最低跌至3907.40点，10点35左右沪指探底回升跌幅收窄。同样反向来看，看多但也不积极做多，虽然临近盘尾沪指呈上扬趋势，两
+							市1524股飘红，近180股涨停。但热点只有一家，国改成为第一热点，从中央到地方，大面积开花。而国改的热点是两个星期前的热点了，买点已过，高追有
+							讲师：卓维<br />路震荡下跌险失3900点，最低跌至3907.40点，10点35左右沪指探底回升跌幅收窄。同样反向来看，看多但也不积极做多，虽然临近盘尾沪指呈上扬趋势，两
+							市1524股飘红，近180股涨停。但热点只有一家，国改成为第一热点，从中央到地方，大面积开花。而国改的热点是两个星期前的热点了，买点已过，高追有
+						</div>
+						<div class="tab-pane fade intronei memberslib mCustomScrollbar"
+							data-mcs-theme="dark" id="zdy1">自定义一</div>
+						<div class="tab-pane fade intronei memberslib mCustomScrollbar"
+							data-mcs-theme="dark" id="zdy2">自定义二</div>
+					</div>
+				</div>
+
+			</div>
+			<!--视频结束-->
+
+			<!--聊天开始-->
+			<div class="col-md-4 main_right contents">
+
+				<div class="active2">
+
+					<div class="chew_x tab4" id="tab4">
+						<div class="chitchat">
+							<ul>
+								<li class="active"><a href="#glchat" data-toggle="tab">公聊</a></li>
+								<li><a href="#slchat" data-toggle="tab">私聊</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="chew_y">
+						<!--清屏滚动开始-->
+						<button type="button" class="btn btn-default chew_c btn-md">
+							清屏<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+						</button>
+						<button type="button" class="btn btn-default chew_d btn-md">
+							锁屏<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+						</button>
+						<!--清屏滚动结束-->
+					</div>
+
+				</div>
+
+				<div class="chitchatdiv tab-content">
+
+					<!--发言开始-->
+					<div class="chat_ipt comment-main" id="comment">
+						<textarea id="content" class="form-control inputw emotion"
+							name="test" id="saytext" placeholder="说说您的看法吧！" cols="30"
+							rows="3"></textarea>
+						<div class="ipu_bar">
+							<div class="expression" id="face">世基表情图标</div>
+							<div class="private">
+								<select name="send_talkto" class="private_1">
+									<option value="0">所有人</option>
+									<option value="1">百合</option>
+									<option value="2">玫瑰</option>
+								</select>
+							</div>
+							<button id="send" onclick="send();" type="button"
+								class="btn btn-md btn-danger fasong">发送</button>
+						</div>
+
+						<!--QQ表情开始-->
+						<!--<input id="analytic" type="button" value="解析" onClick="out()" /> -->
+						<script type="text/javascript"
+							src="http://cdn.bootcss.com/jquery/1.8.0/jquery.min.js"></script>
+						<script type="text/javascript" src="js/jquery.sinaEmotion.js"></script>
+						<!--表情js-->
+						<script type="text/javascript">
+							// 绑定表情
+							$('#face').SinaEmotion($('.emotion'));
+
+							// 测试本地解析
+							function out() {
+								var inputText = $('.emotion').val();
+								$('#out').html(AnalyticEmotion(inputText));
+							}
+						</script>
+						<!--QQ表情结束-->
+
+					</div>
+					<!--发言结束-->
+
+					<!--公聊开始-->
+					<div class="tab-pane fade in active" id="glchat">
+						<!--聊天窗口开始-->
+						<div class="chat_f">
+							<div class="chat_y mCustomScrollbar" data-mcs-theme="dark"
+								id="content_div"></div>
+							<!--聊天窗口结束-->
+						</div>
+					</div>
+					<!--公聊结束-->
+
+					<!--私聊开始-->
+					<div class="tab-pane fade" id="slchat">
+						<div class="chat_lt" id="myTab">
+
+							<div class="chat_label wrap_slide">
+								<div class="label_left previous">
+									<span class="glyphicon glyphicon-triangle-left"
+										aria-hidden="true"></span>
+								</div>
+
+								<div class="slide">
+									<div class="p1" style="left: 0px;">
+										<div class="label_content tab5" id="tab5">
+											<ul class="nav nav-pills tentui menu5" role="tablist">
+												<li class="active"><a href="#bllname" data-toggle="tab">巴啦啦1</a><span
+													class="badge">42</span></li>
+												<li><a href="#ysjname" data-toggle="tab">赢世界</a></li>
+												<li><a href="#xzmhname" data-toggle="tab">限制美好</a><span
+													class="badge">3</span></li>
+												<li><a href="#quanname" data-toggle="tab">泉</a><span
+													class="badge">3</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="p2" style="left: 350px;">
+										<div class="label_content tab5" id="tab5">
+											<ul class="nav nav-pills tentui menu5" role="tablist">
+												<li class="active"><a href="#bllname" data-toggle="tab">巴啦啦2</a><span
+													class="badge">42</span></li>
+												<li><a href="#ysjname" data-toggle="tab">赢世界</a></li>
+												<li><a href="#xzmhname" data-toggle="tab">限制美好</a><span
+													class="badge">3</span></li>
+												<li><a href="#quanname" data-toggle="tab">泉</a><span
+													class="badge">3</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="p3" style="left: 350px;">
+										<div class="label_content tab5" id="tab5">
+											<ul class="nav nav-pills tentui menu5" role="tablist">
+												<li role="presentation" id="five1"
+													onclick="setTab5('five',1)"><a href="#">巴啦啦3<span
+														class="badge">42</span></a></li>
+												<li role="presentation" id="five2"
+													onclick="setTab5('five',2)"><a href="#">赢世界</a></li>
+												<li role="presentation" id="five3"
+													onclick="setTab5('five',3)"><a href="#">限制美好<span
+														class="badge">3</span></a></li>
+												<li role="presentation" id="five4"
+													onclick="setTab5('five',4)"><a href="#">泉<span
+														class="badge">3</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="p4" style="left: 350px;">
+										<div class="label_content tab5" id="tab5">
+											<ul class="nav nav-pills tentui menu5" role="tablist">
+												<li role="presentation" id="five1"
+													onclick="setTab5('five',1)"><a href="#">巴啦啦4<span
+														class="badge">42</span></a></li>
+												<li role="presentation" id="five2"
+													onclick="setTab5('five',2)"><a href="#">赢世界</a></li>
+												<li role="presentation" id="five3"
+													onclick="setTab5('five',3)"><a href="#">限制美好<span
+														class="badge">3</span></a></li>
+												<li role="presentation" id="five4"
+													onclick="setTab5('five',4)"><a href="#">泉<span
+														class="badge">3</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="p5" style="left: 350px;">
+										<div class="label_content tab5" id="tab5">
+											<ul class="nav nav-pills tentui menu5" role="tablist">
+												<li role="presentation" id="five1"
+													onclick="setTab5('five',1)"><a href="#">巴啦啦5<span
+														class="badge">42</span></a></li>
+												<li role="presentation" id="five2"
+													onclick="setTab5('five',2)"><a href="#">赢世界</a></li>
+												<li role="presentation" id="five3"
+													onclick="setTab5('five',3)"><a href="#">限制美好<span
+														class="badge">3</span></a></li>
+												<li role="presentation" id="five4"
+													onclick="setTab5('five',4)"><a href="#">泉<span
+														class="badge">3</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="p6" style="left: 350px;">
+										<div class="label_content tab5" id="tab5">
+											<ul class="nav nav-pills tentui menu5" role="tablist">
+												<li role="presentation" id="five1"
+													onclick="setTab5('five',1)"><a href="#">巴啦啦6<span
+														class="badge">42</span></a></li>
+												<li role="presentation" id="five2"
+													onclick="setTab5('five',2)"><a href="#">赢世界</a></li>
+												<li role="presentation" id="five3"
+													onclick="setTab5('five',3)"><a href="#">限制美好<span
+														class="badge">3</span></a></li>
+												<li role="presentation" id="five4"
+													onclick="setTab5('five',4)"><a href="#">泉<span
+														class="badge">3</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="p7" style="left: 350px;">
+										<div class="label_content tab5" id="tab5">
+											<ul class="nav nav-pills tentui menu5" role="tablist">
+												<li role="presentation" id="five1"
+													onclick="setTab5('five',1)"><a href="#">巴啦啦7<span
+														class="badge">42</span></a></li>
+												<li role="presentation" id="five2"
+													onclick="setTab5('five',2)"><a href="#">赢世界</a></li>
+												<li role="presentation" id="five3"
+													onclick="setTab5('five',3)"><a href="#">限制美好<span
+														class="badge">3</span></a></li>
+												<li role="presentation" id="five4"
+													onclick="setTab5('five',4)"><a href="#">泉<span
+														class="badge">3</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="label_right next">
+									<span class="glyphicon glyphicon-triangle-right"
+										aria-hidden="true"></span>
+								</div>
+							</div>
+							<!--用户消息tab切换-->
+
+							<!--聊天窗口开始-->
+							<div class="menu5div tab-content">
+
+								<div class="tab-pane fade in active" id="bllname">
+									<div class="chat_x">
+										<div class="chat_y mCustomScrollbar" data-mcs-theme="dark">
+											<div class="media">
+												<a class="media-left" href="#"><img
+													src="img/portrait.png"></a>
+												<div class="media-body tospeak">
+													<h4 class="media-heading">
+														<span class="name_time">巴啦啦</span><span class="name_time">20:27</span>
+													</h4>
+													<p class="speech-bubble one">
+														标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题<br />
+														标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题<br />
+													</p>
+												</div>
+											</div>
+											<div class="media">
+												<a class="media-left" href="#"><img
+													src="img/portrait.png"></a>
+												<div class="media-body tospeak">
+													<h4 class="media-heading">
+														<span class="name_time">巴啦啦</span><span class="name_time">20:27</span>
+													</h4>
+													<p class="speech-bubble one">
+														标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题<br />
+														标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题<br />
+													</p>
+												</div>
+											</div>
+											<div class="media">
+												<a class="media-left" href="#"><img
+													src="img/portrait.png"></a>
+												<div class="media-body tospeak">
+													<h4 class="media-heading">
+														<span class="name_time">巴啦啦</span><span class="name_time">20:27</span>
+													</h4>
+													<p class="speech-bubble one">
+														标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题<br />
+														标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题<br />
+													</p>
+												</div>
+											</div>
+											<div class="media">
+												<a class="media-left" href="#"><img
+													src="img/portrait.png"></a>
+												<div class="media-body tospeak">
+													<h4 class="media-heading">
+														<span class="name_time">巴啦啦</span><span class="name_time">20:27</span>
+													</h4>
+													<p class="speech-bubble one">
+														标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题<br />
+														标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题<br />
+													</p>
+												</div>
+											</div>
+											<div class="media">
+												<a class="media-left" href="#"><img
+													src="img/portrait.png"></a>
+												<div class="media-body tospeak">
+													<h4 class="media-heading">
+														<span class="name_time">巴啦啦</span><span class="name_time">20:27</span>
+													</h4>
+													<p class="speech-bubble one">标题标题标题标题标题标题</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="ysjname">
+									<div class="chat_x">
+										<div class="chat_y mCustomScrollbar" data-mcs-theme="dark">
+											<div class="media">
+												<a class="media-left" href="#"><img
+													src="img/portrait.png"></a>
+												<div class="media-body tospeak">
+													<h4 class="media-heading">
+														<span class="name_time">巴啦啦</span><span class="name_time">20:27</span>
+													</h4>
+													<p class="speech-bubble one">
+														标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="xzmhname">
+									<div class="chat_x">
+										<div class="chat_y mCustomScrollbar" data-mcs-theme="dark">
+											<div class="media">
+												<a class="media-left" href="#"><img
+													src="img/portrait.png"></a>
+												<div class="media-body tospeak">
+													<h4 class="media-heading">
+														<span class="name_time">巴啦啦</span><span class="name_time">20:27</span>
+													</h4>
+													<p class="speech-bubble one">
+														标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="quanname">
+									<div class="chat_x">
+										<div class="chat_y mCustomScrollbar" data-mcs-theme="dark">
+											<div class="media">
+												<a class="media-left" href="#"><img
+													src="img/portrait.png"></a>
+												<div class="media-body tospeak">
+													<h4 class="media-heading">
+														<span class="name_time">巴啦啦</span><span class="name_time">20:27</span>
+													</h4>
+													<p class="speech-bubble one">标题标题标题标题标题标标题标题标题标题标题标题</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!--聊天窗口结束-->
+
+						</div>
+					</div>
+					<!--私聊结束-->
+
+				</div>
+
+			</div>
+			<!--聊天结束-->
+		</div>
+	</div>
+
+	<!--底部开始-->
+	<a class="btn foot1" href="#" role="button"></a>
+	<div class="footer">
+		<marquee direction="left" id="notice" scrollamount="3">横向滚动——世基周二观点：
+			盘中双背离 向上宜减仓。昨日走势基本符合预期：无大的阴阳线，有多但多头不强，有空头不追空，所以盘面特征就是早盘杀跌，但空头加盟的不多</marquee>
+	</div>
+	<!--底部结束-->
+
+	<!-- modal-exampleModal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="exampleModal">评论</h4>
+				</div>
+				<div class="modal-body">
+					<p>评论1234</p>
+					<p>评论1234</p>
+					<p>评论1234</p>
+					<p>评论1234</p>
+					<p>评论1234</p>
+					<p>评论1234</p>
+					<p>评论1234</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-shuju -->
+	<div class="modal fade" id="shuju" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="shuju">数据</h4>
+				</div>
+				<div class="modal-body">
+					<p>数据1234</p>
+					<p>数据1234</p>
+					<p>数据1234</p>
+					<p>数据1234</p>
+					<p>数据1234</p>
+					<p>数据1234</p>
+					<p>数据1234</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="site-sidebar">
+		<!--<a href="http://itougu.jrj.com.cn/app/index.html" class="site-sidebar-item site-sidebar-item-app" style="display:none;" target="_blank"></a>-->
+		<a href="#" class="site-sidebar-item site-sidebar-item-goto"></a> <a
+			class="site-sidebar-item site-sidebar-item-mystock" target="_blank"></a>
+		<!--<a href=" http://itougu.jrj.com.cn/app/index.html" title="" target="_blank"><img src="http://js.jrjimg.cn/zqt-red-1000/images/ewm.png" alt=""></a>-->
+	</div>
+	<div class="album-dialog dl_album album-dialog-show"
+		style="width: 400px; left: 62%; top:40%;  z-index: 99999;display:none; transition-duration: 0.3s; margin：0 auto; transform: scale(1); opacity: 1; background-color: #FFFFFF;"
+		id="xgmm_div">
+		<div class="md-container">
+			<div class="md-titlebar dl_titlebar" style="font-size: 15px;color: #b4251e">用户登录	<i id="ld-btnClose" class="md-close"  style="width: 20px; float: right;" onclick="del_xgmm();" title="关闭">&times;</i></div>
+			<div class="md-body">
+				<div class="md-content dl_md">
+					<div class="dlg-login clearfix">
+						<div class="dl_left" style="margin-left: 35px;">
+							<p class="dl_text">
+								<label id="user">用户名：</label><input id="dl_blur" type="text"
+									name="LoginID" value="">
+							</p>
+							<span id="ld-Alert" class="dl_red"></span>
+							<p class="dl_text">
+								<label id="pass">密码：</label><input type="password" id="pwd"
+									name="Passwd" value="">
+							</p>
+							<p class="dl_but" style="margin-top: 10px;">
+								<a title="" id="" onclick="login()">登录</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="album-mask" id="bg"
+		style="position: absolute; top: 0px; left: 0px; opacity: 0.1; z-index: 9400; width: 100%; height: 1200px; display:none; background-color: rgb(0, 0, 0);">
+
+
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- custom scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!--滚动条js-->
+	<script type="text/javascript" src="js/shxx2.js"></script>
+	<!--变装切换/弹窗口-->
+	<script type="text/javascript" src="js/swfobject.js"></script>
+	<script type="text/javascript" src="js/web_socket.js"></script>
+<script type="text/javascript" src="js/im.js"></script> 
+	<script type="text/javascript" >
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+       "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liveRoom.dao.CommonDao">
+	<select id="getMapListClass" resultType="java.util.Map">
+		${value}
+	</select>
+
+	<select id="getMapClass" resultType="java.util.Map">
+		${value}
+	</select>
+	
+	<select id="getListObject" resultType="Long">
+		${value}
+	</select>
+
+	<select id="getOneValue" resultType="String">
+		${value}
+	</select>
+
+	<select id="getCount" parameterType="String" resultType="long">
+		${value}
+	</select>
+	
+	<insert id="add" parameterType="String">
+		${value}
+	</insert>
+	
+	<update id="update" parameterType="String">
+		${value}
+	</update>
+	
+	<delete id="delete" parameterType="String">
+		${value}
+	</delete>
+</mapper>
